@@ -40,7 +40,7 @@ Este proyecto es una página web simple que permite realizar las siguientes oper
 1. Descarga o clona este repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/data-converter-calculator.git
+   git clone https://github.com/andres-olarte396/dev-laoz-DataCalculator.git
    ```
 
 2. Abre el archivo `index.html` en tu navegador favorito.
@@ -97,4 +97,4 @@ Este proyecto está bajo la licencia MIT. Puedes consultarla en el archivo `LICE
 
 ## ✨ Créditos
 
-Desarrollado por [L40Z](https://github.com/andres-olarte396)
+Desarrollado por [andres-olarte396](https://github.com/andres-olarte396)
