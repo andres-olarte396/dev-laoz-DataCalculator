@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Unit Converter & Download Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
+    <link rel="icon" href="../dev-laoz-WaveArtCSS/assets/favicons/favicon.png" type="image/x-icon" />
+</head>
+</head>
+
+<body>
+    <header>
+        <h1>Data Unit Converter & Download Calculator</h1>
+
+    </header>
+    <main>
+        <div class="container">
+
+            <!-- Storage Unit Converter -->
+            <div class="converter-section">
+                <h2>Convert Storage Units</h2>
+                <label for="storageValue">Enter Value:</label>
+                <input type="number" id="storageValue" placeholder="Enter value" />
+
+                <label for="storageUnitFrom">From:</label>
+                <select id="storageUnitFrom">
+                    <option value="1">Bytes</option>
+                    <option value="1024">Kilobytes (KB)</option>
+                    <option value="1048576">Megabytes (MB)</option>
+                    <option value="1073741824">Gigabytes (GB)</option>
+                    <option value="1099511627776">Terabytes (TB)</option>
+                </select>
+
+                <label for="storageUnitTo">To:</label>
+                <select id="storageUnitTo">
+                    <option value="1">Bytes</option>
+                    <option value="1024">Kilobytes (KB)</option>
+                    <option value="1048576">Megabytes (MB)</option>
+                    <option value="1073741824">Gigabytes (GB)</option>
+                    <option value="1099511627776">Terabytes (TB)</option>
+                </select>
+
+                <button onclick="convertStorage()">Convert</button>
+                <p id="storageResult" class="result"></p>
+            </div>
+
+            <!-- Data Speed Converter -->
+            <div class="converter-section">
+                <h2>Convert Data Speed Units</h2>
+                <label for="speedValue">Enter Value:</label>
+                <input type="number" id="speedValue" placeholder="Enter value" />
+
+                <label for="speedUnitFrom">From:</label>
+                <select id="speedUnitFrom">
+                    <option value="1">Bits per Second (bps)</option>
+                    <option value="1000">Kilobits per Second (Kbps)</option>
+                    <option value="1000000">Megabits per Second (Mbps)</option>
+                    <option value="1000000000">Gigabits per Second (Gbps)</option>
+                </select>
+
+                <label for="speedUnitTo">To:</label>
+                <select id="speedUnitTo">
+                    <option value="1">Bits per Second (bps)</option>
+                    <option value="1000">Kilobits per Second (Kbps)</option>
+                    <option value="1000000">Megabits per Second (Mbps)</option>
+                    <option value="1000000000">Gigabits per Second (Gbps)</option>
+                </select>
+
+                <button onclick="convertSpeed()">Convert</button>
+                <p id="speedResult" class="result"></p>
+            </div>
+
+            <!-- Download Time Calculator -->
+            <div class="converter-section">
+                <h2>Download Time Calculator</h2>
+                <label for="fileSize">File Size (in MB):</label>
+                <input type="number" id="fileSize" placeholder="Enter file size in MB" />
+
+                <label for="downloadSpeed">Download Speed (in Mbps):</label>
+                <input type="number" id="downloadSpeed" placeholder="Enter download speed in Mbps" />
+
+                <button onclick="calculateDownloadTime()">Calculate Time</button>
+                <p id="downloadTimeResult" class="result"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2021
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
